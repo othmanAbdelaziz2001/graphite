@@ -30,6 +30,9 @@ app.get('/feed', (req, res) => {
   res.json(activityFeed);
 });
 
+app.get("/feed/pr", (req, res) => {
+  res.json(activityFeed);
+});
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
